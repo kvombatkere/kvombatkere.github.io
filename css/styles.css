@@ -605,6 +605,10 @@ footer {
     font-size: 1.2em
 }
 
+#skills li.easycolor {
+    background: greenyellow !important
+}
+
 #contact {
     padding: 50px 15px;
     background: #3498db;
@@ -726,10 +730,6 @@ footer {
 
 .optional-section-block ul {
     padding: 0 0 0 15px
-}
-
-.easycolor {
-    color: rebeccapurple
 }
 
 @media only screen and (max-width: 750px) {
