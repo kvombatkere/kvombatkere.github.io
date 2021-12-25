@@ -215,7 +215,7 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #fff;
+    color: rgb(14, 10, 10);
     padding: 15px 25px;
     border: 3px solid #fff;
     border-radius: 30px;
@@ -223,8 +223,8 @@ footer {
 }
 
 .btn-rounded-white:hover {
-    color: #3498db;
-    background: #fff;
+    color: #0d2738;
+    background: rgb(155, 185, 209);
     text-decoration: none
 }
 
@@ -253,17 +253,17 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #3498db
+    background: rgba(151, 186, 202, 0.678);
 }
 
 .background-alt {
-    background: #f2f2f5
+    background: rgba(151, 186, 202, 0.678);
 }
 
 #lead {
     position: relative;
-    height: 250vh;
-    min-height: 50px;
+    height: 200vh;
+    min-height: 10px;
     max-height: 500px;
     background: url(../images/lead-bg.jpg);
     background-size: cover;
@@ -295,7 +295,7 @@ footer {
 }
 
 #lead-content h2 {
-    color: #a0cfee;
+    color: #2c3841;
     font-weight: 500;
     font-size: 2.25em;
     margin-bottom: 15px
@@ -309,7 +309,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(33, 125, 187, 0.8);
+    background: rgba(110, 173, 202, 0.678);
     z-index: 1
 }
 
@@ -355,22 +355,22 @@ footer {
 
 #about {
     padding: 75px 15px;
-    border-bottom: 1px solid #dcd9d9
+    border-bottom: 1px solid #153258;
 }
 
 #about h2 {
-    color: #374054
+    color: #5e6b88
 }
 
 #about p {
-    color: #74808a;
+    color: #768da0;
     margin: 0
 }
 
 #experience {
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid #dcd9d9
+    border-bottom: 1px solid #153258;
 }
 
 #experience h2 {
@@ -440,7 +440,6 @@ footer {
 .vtimeline-point {
     position: relative;
     display: block;
-    vertical-align: top;
     margin-bottom: 30px
 }
 
@@ -474,7 +473,7 @@ footer {
 
 #education {
     padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid #dcd9d9;
+    border-bottom: 1px solid #153258;
     text-align: center
 }
 
@@ -523,13 +522,13 @@ footer {
 
 #projects {
     padding: 50px 15px;
-    border-bottom: 1px solid #dcd9d9;
+    border-bottom: 1px solid #153258;
     text-align: center
 }
 
 #research {
     padding: 50px 15px;
-    border-bottom: 1px solid #dcd9d9;
+    border-bottom: 1px solid #153258;
     text-align: center
 }
 
