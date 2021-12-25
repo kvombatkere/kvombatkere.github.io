@@ -262,13 +262,13 @@ footer {
 
 #lead {
     position: relative;
-    height: 100vh;
-    min-height: 500px;
-    max-height: 1080px;
+    height: 250vh;
+    min-height: 50px;
+    max-height: 500px;
     background: url(../images/lead-bg.jpg);
     background-size: cover;
     padding: 15px;
-    overflow: hidden
+    overflow: clip
 }
 
 #lead-content {
