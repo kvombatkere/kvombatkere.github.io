@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-md-9">
                     <p>
-                        I am a second-year Computer Science PhD student at Boston University, advised by <a href="http://cs-people.bu.edu/evimaria/" target="_blank">Dr. Evimaria Terzi</a>. 
+                        I am a Computer Science PhD student at Boston University, advised by <a href="http://cs-people.bu.edu/evimaria/" target="_blank">Dr. Evimaria Terzi</a>. 
                         I am a part of the <a href="https://midas.bu.edu/" target="_blank">Massive Data & Algorithms (MiDAS)</a> research group at BU, and my research is primarily focused 
                         on data mining algorithms. My current research is on designing efficient approximation algorithms for submodular optimization problems, such as the Team Formation/Max-k
                         Coverage problem.
@@ -97,7 +97,7 @@
                         such as computer audition (with <a href="http://www2.ece.rochester.edu/~zduan/" target="_blank">Prof. Zhiyao Duan</a>), computational physics and game theory. 
                         I then pursued a masters degree in Data Science with a focus in computational and statistical methods, and worked 
                         with <a href="https://scholar.google.com/citations?user=CcbnBvgAAAAJ&hl=en" target="_blank">Prof. Jiebo Luo</a>.
-                        <br><br> I play tennis and soccer, and enjoy outdoor activities such as hiking, skiing and biking. I also like to challenge myself with chess, poker and other strategy games. 
+                        <br><br> I play tennis and soccer, and enjoy outdoor activities such as skiing, hiking and biking. I also like to challenge myself with chess, poker and other strategy games. 
                         I am an eager home cook and I enjoy exploring the Boston/Cambridge area in search of good food and drink!
                 </div>
             </div>
@@ -134,15 +134,40 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
+                        <img src="images/debs22.jpeg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Detecting trends in streaming financial data using Apache Flink</h3>
+                        <p>
+                            Modern financial analytics rely on high-volume streams of event notifications that report live market fluctuations based on supply and demand. 
+                            Accurately identifying trends or breakout patterns based on the Exponential Moving Average (EMA) in the development of an instrument’s price early on 
+                            is an important challenge, so as to buy while the price is low and sell before a downtrend begins. This paper aims to solve the above challenge with a 
+                            distributed, event-streaming solution built using Apache Flink. We present and implement a solution that leverages customized window operators to calculate 
+                            the EMA and find breakout patterns, using event generation parallelism to facilitate the rapid processing of the input stream uses sinks to collect and output 
+                            results, and scales easily on a distributed Flink cluster. We empirically test our design on metrics specified by the benchmarking platform for the 
+                            DEBS 2022 Grand Challenge and observe a throughput of 45 batches per second and an average latency of 120 ms.
+                        </p>
+                        <a href="https://github.com/kvombatkere/DEBS22-Group11" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a><br>
+                        <a href="assets/DEBS22_TechnicalPaper.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> DEBS 2022 Grand Challenge paper.</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
                         <img src="images/covid19.jpg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Mining travel and weather patterns to understand the spread of COVID-19</h3>
                         <p>
-                            I collaborated with <a href="https://scholar.google.com/citations?user=CcbnBvgAAAAJ&hl=en" target="_blank">Prof. Jiebo Luo</a> to research the spread of COVID-19 along political lines in US States using transportation patterns
-                            and weather data. I wrote code to cluster and analyze population mobility features across Red and Blue states (as per the 2016 presidential election) and discovered significant correlation patterns between the way people travel
-                            and the COVID-19 infection growth rate from March to July 2020.
+                            We investigate the difference in the spread of COVID-19 between the states won by Donald Trump (Red) and the states won by Hillary Clinton (Blue) 
+                            in the 2016 presidential election, by mining transportation patterns of US residents from March 2020 to July 2020. To ensure a fair comparison, we first 
+                            use a K-means clustering method to group the 50 states into five clusters according to their population, area and population density. 
+                            We then characterize daily transportation patterns of the residents of different states using the mean percentage of residents traveling and the 
+                            number of trips per person. We also use temperature data to attempt to explain the difference in the way residents travel and practice safety measures.
                         </p>
                         <a href="https://github.com/kvombatkere/Covid19-Research" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a><br>
                         <a href="https://arxiv.org/pdf/2009.04612.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> SBP-BRiMS 2021.</a>
@@ -228,6 +253,24 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/coreset.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Coreset Algorithms for Clustering and Streaming <a href="https://github.com/kvombatkere/CoreSets-Algorithms" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </h3>
+                        <p>
+                            Python implementation of Coreset algorithms for clustering and streaming. The code in this repository can be used to generate Coresets for use-cases 
+                            such as median estimation, minumum-enclosing ball (MEB), k-center clustering and Gaussian mixture models (GMMs).
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/catan_gui.jpg" />
@@ -237,9 +280,10 @@
                         <h3>Settlers of Catan AI Framework <a href="https://github.com/kvombatkere/Catan-AI" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </h3>
                         <p>
-                            Settlers of Catan boardgame built in Python. The goal of this project is to implement full multiplayer game functionality and use MCTS and reinforcement learning to build an AI player that can effectively explore-exploit heuristic strategies.
+                            Settlers of Catan boardgame built in Python. The goal of this project is to implement full multiplayer game functionality and use machine learning to build an AI player that can effectively explore-exploit heuristic strategies.
                             <br><br>
-                            <b>References:</b><br> Xenou, Konstantia, Georgios Chalkiadakis, and Stergos Afantenos. "Deep Reinforcement Learning in Strategic Board Game Environments." European Conference on Multi-Agent Systems. Springer, Cham, 2018.<br>                            Gendre, Quentin, and Tomoyuki Kaneko. "Playing Catan with Cross-Dimensional Neural Network." International Conference on Neural Information Processing. Springer, Cham, 2020.
+                            <b>References:</b><br> Xenou, Konstantia, Georgios Chalkiadakis, and Stergos Afantenos. "Deep Reinforcement Learning in Strategic Board Game Environments." European Conference on Multi-Agent Systems. Springer, Cham, 2018.<br>                            
+                            Gendre, Quentin, and Tomoyuki Kaneko. "Playing Catan with Cross-Dimensional Neural Network." International Conference on Neural Information Processing. Springer, Cham, 2020.
                         </p>
                     </div>
                     <!-- End .project-info -->
