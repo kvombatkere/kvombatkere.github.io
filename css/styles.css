@@ -262,19 +262,19 @@ footer {
 
 #lead {
     position: relative;
-    height: 200vh;
-    min-height: 200px;
-    max-height: 500px;
+    height: 100vh;
+    min-height: 100px;
+    max-height: 400px;
     background: url(../images/lead_background.jpg);
     background-size: cover;
-    padding: 15px;
+    padding: 10px;
     overflow: hidden
 }
 
 #lead-content {
     position: absolute;
-    z-index: 10;
-    top: 50%;
+    z-index: 0;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center
@@ -804,7 +804,7 @@ footer {
         overflow-y: auto;
         box-shadow: none;
         border-radius: 0;
-        width: 100%
+        width: 200%
     }
     #menu li {
         display: block;

@@ -29,19 +29,16 @@
         </div>
         <ul id="menu" class="shadow">
             <li>
-                <a href="#about">Bio</a>
+                <a href="#research" class="shadow">Research</a>
             </li>
             <li>
-                <a href="#research">Research</a>
+                <a href="#experience" class="shadow">Experience</a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#education" class="shadow">Education</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
+                <a href="projects.html" class="shadow">Projects</a>
             </li>
         </ul>
     </header>
@@ -51,25 +48,13 @@
         <div id="lead-content">
             <h2>Karan Vombatkere</h2>
             <h3>PhD Candidate in Computer Science | Boston University</h3>
-            <p><b>MCS 105A, Department of Computer Science <br>
-                111 Cummington Mall, Boston, MA 02215<br><br> 
-                Email: <em>username @ domain</em> <br> where <em>username</em> = kvombat , <em>domain</em> = bu.edu</b>
+                Email: <em><b>username @ domain</b></em> <br> where <em>username</em> = <b>kvombat</b> , <em>domain</em> = <b>bu.edu</b></b>
             </p>
             <a href="assets/Vombatkere_CV.pdf" class="btn-rounded-white" target="_blank"><b>CV</b></a>
             <a href="https://scholar.google.com/citations?user=d02mnckAAAAJ" class="btn-rounded-white" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
             <a href="https://github.com/kvombatkere/" class="btn-rounded-white" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/karan-vombatkere-7a0317ab/" class="btn-rounded-white" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
 
@@ -77,15 +62,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h2 class="heading">Bio</h2>
+                    <!--<h2 class="heading">Bio</h2>-->
                     <br>
                     <img src="images/profilepic.jpg" />
                 </div>
                 <div class="col-md-9">
                     <p>
-                        <br><br>I'm a PhD student in the CS department at Boston University, advised by <a href="http://cs-people.bu.edu/evimaria/" target="_blank">Dr. Evimaria Terzi</a>. 
-                        I am a part of the <a href="https://midas.bu.edu/" target="_blank">Massive Data & Algorithms (MiDAS)</a> research group at BU, and my research is primarily focused 
-                        on data mining algorithms. My current research is on designing efficient approximation algorithms for submodular optimization problems, such as the Team Formation/Max-k
+                        I am a PhD student in the CS department at Boston University, advised by <a href="http://cs-people.bu.edu/evimaria/" target="_blank">Dr. Evimaria Terzi</a>. 
+                        I'm a part of the <a href="https://midas.bu.edu/" target="_blank">Massive Data & Algorithms (MiDAS)</a> research group at BU, and my research is primarily focused 
+                        on data mining algorithms. My current research is on designing efficient approximation algorithms for submodular optimization problems, specifically the Team Formation/Max-k
                         Coverage problem. 
                         <!--<br><br> My broader research interests are shaped by the diversity of my past experiences: I am excited about all things statistical, algorithmic and game theoretic. I am 
                         interested in studying about optimality and efficient strategies in environments of incomplete and imperfect information. I am curious about using machine learning 
@@ -259,154 +244,6 @@
     </div>
     <!-- End #experience -->
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/coreset.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Coreset Algorithms for Clustering and Streaming <a href="https://github.com/kvombatkere/CoreSets-Algorithms" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </h3>
-                        <p>
-                            Python implementation of Coreset algorithms for clustering and streaming. The code in this repository can be used to generate Coresets for use-cases 
-                            such as median estimation, minumum-enclosing ball (MEB), k-center clustering and Gaussian mixture models (GMMs).
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/catan_gui.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Settlers of Catan AI Framework <a href="https://github.com/kvombatkere/Catan-AI" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </h3>
-                        <p>
-                            Settlers of Catan boardgame built in Python. The goal of this project is to implement full multiplayer game functionality and use machine learning to build an AI player that can effectively explore-exploit heuristic strategies.
-                            <br><br>
-                            <b>References:</b><br> Xenou, Konstantia, Georgios Chalkiadakis, and Stergos Afantenos. "Deep Reinforcement Learning in Strategic Board Game Environments." European Conference on Multi-Agent Systems. Springer, Cham, 2018.<br>                            
-                            Gendre, Quentin, and Tomoyuki Kaneko. "Playing Catan with Cross-Dimensional Neural Network." International Conference on Neural Information Processing. Springer, Cham, 2020.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/tennis.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Tennis Player Performance Prediction <a href="https://github.com/kvombatkere/Tennis-Performance-Prediction" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </h3>
-                        <p>
-                            Under the guidance of <a href="https://scholar.google.com/citations?user=CcbnBvgAAAAJ&hl=en" target="_blank">Prof. Jiebo Luo</a>, I used efficient feature extraction on historical tennis match data, combined with a machine
-                            learning implementation in Python to predict the likelihood of professional tennis player success with 80% accuracy. I implemented code to create player-specific statistical feature sets aggregated from individual match data,
-                            and used neural network and logistic regression classification models to categorize player success.
-                        </p>
-                        <a href="assets/Vombatkere_TennisPlayerPrediction_WriteUp.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/ttt_2.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Adversarial Search: Ultimate Tic Tac Toe <a href="https://github.com/kvombatkere/UltimateTicTacToe-AI" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </h3>
-                        <p>
-                            An Ultimate Tic Tac Toe framework in Java, with an implementation of adversarial search using MiniMax with Alpha-Beta pruning. Ultimate Tic Tac Toe comprises nine 3x3 Tic Tac Toe boards, and the goal is to win 3 boards. I also developed a heuristic AI
-                            player, which was tested to beat a control player in 99 out of 100 games.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/enigma.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>German WWII Enigma Machine <a href="https://github.com/kvombatkere/Enigma-Machine" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </h3>
-                        <p>
-                            A complete implementation of the Enigma Machine in Python. I use an object-oriented framework to design the plugboard, reflector and rotor set, allowing for full encryption and decryption functionality. I also implement code to crack the Enigma cipher,
-                            using a known-plaintext attack methodology.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/pendulum_dynamics.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Non-Linear Dynamics of the Damped and Driven Pendulum</h3>
-                        <p>
-                            I investigated the non-linear dynamics of the damped and driven pendulum and developed a theoretical framework for the system. I then computationally solved the classical mechanics problem using Mathematica to discover regions of chaotic and non-chaotic
-                            motion.
-                        </p>
-                        <a href="assets/Vombatkere_ClassicalMechanics_2016.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/binaural.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Augmented Audio Reality: Binaural Headphones</h3>
-                        <p>
-                            Designed, built and tested binaural headphones with real-time recording and filtering capability, with a 12ms latency. Modeled the head-related tranfer function (HRTF) using a <a href="https://en-de.neumann.com/ku-100" target="_blank">Neumann</a>                            head microphone, and implemented the FFT algorithm in C++ to enable real-time audio filtering.
-                        </p>
-                        <a href="assets/Vombatkere_SeniorDesignPresentation.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/brownian.JPG" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Brownian Motion Stock Price Evolution <a href="https://github.com/kvombatkere/Brownian-Price-Evolution" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> </a>
-                        </h3>
-                        <p>
-                            A statistical framework in Python to predict stock price evolution using geometric Brownian motion. The model was tested to have under 5% error using Monte Carlo simulations on 2 years of historical Nike stock prices.<br> <br>
-                            <b>Reference:</b> Dmouj, Abdelmoula. "Stock price modelling: Theory and Practice." Masters Degree Thesis, Vrije Universiteit (2006).
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
@@ -486,7 +323,7 @@
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
