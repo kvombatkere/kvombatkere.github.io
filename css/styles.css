@@ -263,9 +263,9 @@ footer {
 #lead {
     position: relative;
     height: 100vh;
-    min-height: 100px;
-    max-height: 400px;
-    background: url(../images/lead_background.jpg);
+    min-height: 50px;
+    max-height: 550px;
+    background: url(../images/lead_background_new.jpg);
     background-size: cover;
     padding: 10px;
     overflow: hidden
@@ -274,10 +274,10 @@ footer {
 #lead-content {
     position: absolute;
     z-index: 0;
-    top: 60%;
-    left: 50%;
+    top: 40%;
+    left: 30%;
     transform: translate(-50%, -50%);
-    text-align: center
+    text-align: left
 }
 
 #lead-content h1,
