@@ -94,4 +94,27 @@
         });
     });
 
+    // Toggle additional research entries
+    $('#toggle-research').click(function() {
+        var $toggle = $(this);
+        var $more = $('#more-research');
+        var isExpanded = $toggle.attr('aria-expanded') === 'true';
+
+        $toggle.attr('aria-expanded', !isExpanded);
+        $more.slideToggle(200);
+        $toggle.text(isExpanded ? 'Show more' : 'Show less');
+    });
+
+        // Toggle abstracts
+        $('.abstract-toggle').click(function() {
+            var $toggle = $(this);
+            var target = $toggle.data('target');
+            var $target = $(target);
+            var isExpanded = $toggle.attr('aria-expanded') === 'true';
+
+            $toggle.attr('aria-expanded', !isExpanded);
+            $target.slideToggle(200);
+            $toggle.text(isExpanded ? 'Abstract' : 'Hide abstract');
+        });
+
 })(jQuery);

@@ -12,8 +12,10 @@
 */
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    background: #fff;
+    color: #172026
 }
 
 body.active {
@@ -25,7 +27,7 @@ body.active {
     background: #fff;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #dcd9d9
+    border: none
 }
 
 .no-js #experience-timeline>div h3 {
@@ -78,9 +80,9 @@ header {
 
 header ul {
     display: inline-block;
-    background: #fff;
+    background: #fdfbf7;
     text-align: center;
-    padding: 10px;
+    padding: 8px 12px;
     margin: 0;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px
@@ -92,19 +94,19 @@ header li {
 
 header a {
     display: block;
-    color: #3498db;
+    color: #1f4e5f;
     padding: 10px
 }
 
 header a:hover {
-    color: #217dbb;
+    color: #163a46;
     text-decoration: none;
-    background: #eee;
+    background: #efe9e1;
     border-radius: 4px
 }
 
 header a:focus {
-    color: #3498db;
+    color: #1f4e5f;
     text-decoration: none
 }
 
@@ -127,24 +129,24 @@ header.sticky {
     position: fixed;
     right: 15px;
     top: 10px;
-    color: #3498db;
+    color: #1f4e5f;
     font-size: 1.5em;
     z-index: 20;
     padding: 0 7px;
     border-radius: 4px;
-    background: #fff
+    background: #fdfbf7
 }
 
 #mobile-menu-close {
     display: none;
     text-align: right;
     width: 100%;
-    background: #fff;
+    background: #fdfbf7;
     font-size: 1.5em;
     padding-right: 15px;
     padding-top: 10px;
     cursor: pointer;
-    color: #3498db
+    color: #1f4e5f
 }
 
 #mobile-menu-close span {
@@ -180,7 +182,7 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #b9bfc4;
+    border: none;
     text-align: center
 }
 
@@ -213,18 +215,82 @@ footer {
     color: #3498db
 }
 
+.project {
+    background: #fff;
+    border: none;
+    border-radius: 4px
+}
+.collapse-section {
+    display: none
+}
+
+.toggle-wrap {
+    text-align: left;
+    margin-top: 5px
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #1f4e5f;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.toggle-button:hover {
+    color: #163a46;
+    text-decoration: underline
+}
+
+.abstract-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #1f4e5f;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.abstract-toggle:hover {
+    color: #163a46;
+    text-decoration: underline
+}
+
+.abstract-text {
+    display: none;
+    margin: 0 0 8px 0;
+    color: #23313a;
+    font-size: 0.9em
+}
+
+.summary-text {
+    margin: 0 0 8px 0;
+    color: #23313a;
+    font-size: 0.9em
+}
+
+.project-info h3 {
+    font-weight: 600;
+    color: #1b2a2f
+}
+
+.project-info p {
+    color: #2f3a3f
+}
+
 .btn-rounded-white {
     display: inline-block;
-    color: rgb(14, 10, 10);
-    padding: 15px 25px;
-    border: 3px solid rgb(189, 203, 241);
-    border-radius: 30px;
-    transition: .5s ease all
+    color: #1f4e5f;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    transition: .4s ease all
 }
 
 .btn-rounded-white:hover {
-    color: #0d2738;
-    background: rgb(155, 185, 209);
+    color: #163a46;
+    background: #efe9e1;
     text-decoration: none
 }
 
@@ -240,7 +306,7 @@ footer {
     position: relative;
     display: inline-block;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 600;
     margin: 0 0 30px 0
 }
 
@@ -253,92 +319,78 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: rgba(151, 186, 202, 0.678);
+    background: transparent
 }
 
 .background-alt {
-    background: rgba(151, 186, 202, 0.678);
+    background: #fff;
 }
 
 #lead {
     position: relative;
-    height: 100vh;
-    min-height: 50px;
-    max-height: 550px;
-    background: url(../images/lead_background_new.jpg);
-    background-size: cover;
-    padding: 10px;
-    overflow: hidden
+    padding: 50px 15px 30px;
+    background: linear-gradient(120deg, rgba(255,255,255,0.82) 0%, rgba(135,194,250,0.18) 100%), url('images/lead_background_new.png') center center/cover no-repeat;
+    border-bottom: none;
 }
 
-#lead-content {
-    position: absolute;
-    z-index: 0;
-    top: 40%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    text-align: left
+.page-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 2.8em;
+    margin: 0 0 8px 0;
+    color: #1b2a2f
 }
 
-#lead-content h1,
-#lead-content h2 {
-    margin: 0
+.title {
+    font-size: 1.15em;
+    margin: 0 0 10px 0;
+    color: #3b4c55
 }
 
-#lead-content h1 {
-    color: #fff;
-    font-weight: 900;
-    font-size: 5em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 0.9em
+.contact {
+    margin: 0 0 12px 0;
+    color: #3b4c55
 }
 
-#lead-content h2 {
-    color: #041e4e;
-    font-weight: 500;
-    font-size: 2.25em;
-    margin-bottom: 15px
+.headline {
+    margin: 0 0 16px 0;
+    color: #2f3a3f
 }
 
-#lead-overlay {
-    position: absolute;
-    height: 100%;
+.link-row a {
+    display: inline-block;
+    margin-right: 16px;
+    color: #1f4e5f;
+    font-weight: 600
+}
+
+.link-row a:hover {
+    color: #163a46;
+    text-decoration: none
+}
+
+.email-inline {
+    display: inline-block;
+    margin-right: 16px;
+    color: #3c4a53;
+    font-weight: 600
+}
+
+.headshot img {
     width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(110, 173, 202, 0.678);
-    z-index: 1
+    max-width: 238px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 25px
 }
 
-#lead-down {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 10;
-    bottom: 15px;
-    color: #fff
+.headshot {
+    display: flex;
+    align-items: center
 }
 
-#lead-down span {
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 3px solid #a0cfee;
-    text-align: center
-}
-
-#lead-down i {
-    animation: pulsate 1.5s ease;
-    animation-iteration-count: infinite;
-    padding-top: 5px
+.mono {
+    font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
 @keyframes pulsate {
@@ -355,22 +407,66 @@ footer {
 
 #about {
     padding: 30px 15px;
-    border-bottom: 1px solid #153258;
-}
-
-#about h2 {
-    color: #5e6b88
+    border-bottom: none
 }
 
 #about p {
-    color: #768da0;
-    margin: 0
+    color: #2f3a3f;
+    margin: 0 0 12px 0
+}
+
+.tagline {
+    font-style: italic;
+    color: #495a63
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.52em;
+    margin: 0 0 16px 0;
+    color: #1b2a2f
+}
+
+.section-subtitle {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: #172026
+}
+
+#experience-teaching .project {
+    margin: 0 auto 6px auto
+}
+
+#experience-teaching .project-info h3 {
+    margin: 0 0 4px 0
+}
+
+#experience-teaching .pub-meta {
+    margin: 0 0 6px 0
+}
+
+#experience-teaching .no-image .project-info {
+    padding: 6px 15px
+}
+
+.course-list {
+    margin: 0 0 3px 30px;
+    padding: 0
+}
+
+.course-list li {
+    margin: 0 0 1px 0
+}
+
+.course-code {
+    font-weight: 700
 }
 
 #experience {
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid #153258;
+    border-bottom: none;
 }
 
 #experience h2 {
@@ -392,7 +488,7 @@ footer {
     right: auto;
     height: 100%;
     width: 3px;
-    background: #3498db;
+    background: transparent;
     z-index: 0
 }
 
@@ -401,8 +497,7 @@ footer {
     content: '';
     width: 3px;
     height: 40px;
-    background: #3498db;
-    background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+    background: transparent;
     top: 100%;
     left: 303px
 }
@@ -410,7 +505,7 @@ footer {
 .vtimeline-content {
     margin-left: 350px;
     background: #fff;
-    border: 1px solid #e6e6e6;
+    border: none;
     padding: 15px;
     border-radius: 3px;
     text-align: left
@@ -473,7 +568,7 @@ footer {
 
 #education {
     padding: 20px 15px 20px 15px;
-    border-bottom: 1px solid #153258;
+    border-bottom: none;
     text-align: center
 }
 
@@ -486,7 +581,7 @@ footer {
     max-width: 1000px;
     margin: 0 auto 30px auto;
     padding: 5px;
-    border: 2px solid #88aab9;
+    border: none;
     text-align: left
 }
 
@@ -522,54 +617,157 @@ footer {
 
 #projects {
     padding: 50px 15px;
-    border-bottom: 1px solid #153258;
-    text-align: center
+    border-bottom: none;
+    text-align: left;
 }
 
 #research {
-    padding: 50px 15px;
-    border-bottom: 1px solid #153258;
-    text-align: center
+    padding: 20px 15px 60px;
+    border-bottom: none;
+    text-align: left
+}
+
+#research .project {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 20px;
+    align-items: center
+}
+
+/* Center all research images except the first (Pareto) */
+#research .project:not(:first-child) .project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: none;
+    margin-left: 0;
+    height: 100%;
+}
+
+#research .project-info {
+    margin-left: 0;
+    position: relative;
+    top: -12px
+}
+
+#research .section-title,
+#experience-teaching .section-title {
+    text-align: left;
+    display: block
 }
 
 #projects h2 {
     color: #374054;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+}
+
+#projects .section-title {
+    text-align: left;
+    display: block;
+}
+
+#projects .project {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 20px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto 16px auto;
+    background: #fff;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+}
+
+#projects .project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: none;
+    margin-left: 0;
+    height: 100%;
+}
+
+#projects .project-image img {
+    width: 140px;
+    height: auto;
+}
+
+#projects .project-info {
+    margin-left: 0;
+    position: relative;
+    top: -12px;
+    padding: 15px;
+    text-align: left;
+}
+
+#projects .project-info h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #172026;
+    margin: 0 0 6px 0;
+}
+
+#projects .pub-meta {
+    margin: 0 0 6px 0;
+    color: #3c4a53;
+    font-weight: 600;
+}
+
+#projects .project-info p {
+    color: #23313a;
+    margin: 0 0 8px 0;
+    font-size: 0.9em;
 }
 
 .project {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 6px auto;
     overflow: hidden;
     background: #fff;
-    border-radius: 4px
+    border-radius: 4px;
+    border: none
+}
+
+.project.shadow-large {
+    box-shadow: none
 }
 
 .project-image {
     float: left;
     max-height: fit-content;
+    margin-left: 20px;
+}
+
+.project-image img {
+    width: 140px;
+    height: auto
 }
 
 .project-info {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 300px;
+    position: relative;
+    margin-left: 250px;
     padding: 15px;
     text-align: left
 }
 
 .project-info h3 {
     font-size: 1.5em;
-    font-weight: 300;
-    color: #374054;
-    margin: 0 0 15px 0
+    font-weight: 600;
+    color: #172026;
+    margin: 0 0 6px 0
+}
+
+.pub-meta {
+    margin: 0 0 6px 0;
+    color: #3c4a53;
+    font-weight: 600
 }
 
 .project-info p {
-    color: #74808a;
-    margin: 0 0 15px 0;
+    color: #23313a;
+    margin: 0 0 8px 0;
     font-size: 0.9em
 }
 
@@ -699,7 +897,7 @@ footer {
 .optional-section {
     padding: 50px 15px;
     text-align: center;
-    border-top: 1px solid #dcd9d9
+    border-top: none
 }
 
 .optional-section h2 {
@@ -710,7 +908,7 @@ footer {
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
-    border: 1px solid #dcd9d9;
+    border: none;
     background: #fff;
     text-align: left
 }
@@ -765,7 +963,8 @@ footer {
         height: auto;
         min-height: auto;
         max-height: auto;
-        padding: 100px 15px
+        padding: 80px 15px;
+        background: linear-gradient(120deg, rgba(255,255,255,0.82) 0%, rgba(135,194,250,0.18) 100%), url('images/lead_background_new.png') center center/cover no-repeat !important;
     }
     #lead-content {
         position: relative;
